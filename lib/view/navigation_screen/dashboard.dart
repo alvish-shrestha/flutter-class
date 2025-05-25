@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myproject/navigation_screen/about_screen.dart';
-import 'package:myproject/navigation_screen/cart_screen.dart';
-import 'package:myproject/navigation_screen/home_screen.dart';
-import 'package:myproject/navigation_screen/profile_screen.dart';
+import 'package:myproject/view/navigation_screen/about_screen.dart';
+import 'package:myproject/view/navigation_screen/cart_screen.dart';
+import 'package:myproject/view/navigation_screen/home_screen.dart';
+import 'package:myproject/view/navigation_screen/profile_screen.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
