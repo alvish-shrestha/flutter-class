@@ -20,25 +20,16 @@ class _FirstViewState extends State<FirstView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: RichText(text: const TextSpan(
-          text: "Arithmetic ",
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 30
+        title: RichText(
+          text: const TextSpan(
+            text: "Arithmetic view",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 30,
+              fontFamily: "Jaro",
+            ),
           ),
-          children: <TextSpan> [
-            TextSpan(
-              text: "bold",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
-              ),
-            ),
-            TextSpan(
-              text: " view",
-            ),
-          ]
-        )),
+        ),
         centerTitle: true,
         backgroundColor: Colors.red,
         // elevation: 0, // shadow hataunw
@@ -67,7 +58,7 @@ class _FirstViewState extends State<FirstView> {
                 },
               ),
               SizedBox(height: 8),
-          
+
               TextFormField(
                 decoration: InputDecoration(
                   labelText: "Enter second number",
@@ -86,7 +77,7 @@ class _FirstViewState extends State<FirstView> {
                 },
               ),
               SizedBox(height: 8),
-          
+
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -111,19 +102,6 @@ class _FirstViewState extends State<FirstView> {
               ),
               SizedBox(height: 8),
               Text("Result: $result"),
-
-              SizedBox(height: 10),
-              Container(
-                color: Colors.blueGrey,
-                width: 300,
-                child: const Text("Hello World",  
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.red,
-                  ),
-                )
-              ),
             ],
           ),
         ),
